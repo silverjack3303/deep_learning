@@ -8,7 +8,7 @@ for i = 1,5000 do
   -- random sample
   local input= torch.randn(2);     -- normally distributed example in 2d
   local output= torch.Tensor(1);
-  if input[1]-input[2] > 0 then  -- calculate label for XOR function
+  if input[1]-input[2] > 0 then  
     output[1] = 1
   else
     output[1] = -1
